@@ -1,0 +1,981 @@
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <!-- Bootstrap links -->
+                <title></title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=1920">
+                <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">       
+                <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+                  <style>
+  body{
+    width: 100%;
+    margin: 0%;
+    padding: 0%; 
+    background-color: #fffef9;
+  }
+/***************************iframe start..***************************/
+  .intrinsic-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    border: 2px solid black;
+    margin: 0% 1% 0% 9%;
+    padding: 0;
+
+  }
+      /* 16x9 Aspect Ratio */
+  .intrinsic-container-16x9 {
+    padding-bottom: 75%;
+  } 
+        /* 4x3 Aspect Ratio */
+  .intrinsic-container-4x3 {
+    padding-bottom: 75%;
+  }
+  .intrinsic-container iframe {
+    position: absolute;
+    top:2%;
+    left:0%;
+
+    width: 100%;
+    height: 100%;
+  }
+     /***************************iframe ends..***************************/      
+
+     /***************************navbar start..***************************/    
+  .search{
+    width: 40%;
+  }
+  /*vaertical navbar*/
+  .sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -210px;
+    background-color:#2c53a0;
+    border-right: 2px solid #fff;
+     border-top:  2px solid #fff;
+          border-bottom: 2px solid #fff;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transition: 1s;
+    padding-top: 60px;
+   animation:sidenav 2s;
+   background-color: 
+}
+
+.sidenav ul ol{
+    margin: 5px 0 5px 0;
+    padding: 10px 0 10px 0;
+}
+
+    @keyframes sidenav {
+       0% {
+      opacity: 0;
+      transform: translateX(-20px);
+         }
+   50% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+    }
+    @media(max-width: 460px){
+  #mySidenav{
+    display: none;
+  }
+}
+/*=========================================================*/
+  /*vertical navbar ends*/
+   #maincontainer{
+    width: 100%;
+    margin: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+    min-height: 150px;
+    background-color: #fffef9;
+ }
+  #maincontainer nav{
+    background-color: #fffef9;
+    border: none;
+  }
+#myNavbar ul li a :hover{
+  text-shadow: 0 0 10px skyblue, 0 0 15px skyblue;
+}
+#myNavbar li a img:hover{
+transform: scale(1.1);
+}
+#mainNavBar ul li a:hover{
+  transform: scale(1.1);
+  text-shadow: 0 0 3px black;
+}
+#mySidenav a img:hover{
+  transform:scale(1.1);
+}
+#mySidenav ul button:hover{
+box-shadow:1px 1px 1px 1px skyblue;
+transform: scale(1.05);
+}
+  .home-navbar{
+   background-color: #2c53a0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-right: 8%; 
+  }
+
+#maincontainer ul li a i:hover {
+      animation:a 1s;
+    }
+    @keyframes a {
+      0% {
+        transform:scale(1);
+      }
+      90% {
+        transform:scale(1.2);
+      }
+    }
+
+/*stickey container right ends*/
+
+    /************************************ navbar ends..***************************************/
+
+#drpbtns{
+  color: #fff;
+}
+
+/*
+.dropdown-submenu {
+    position: relative;
+}*/
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+/*ye wo side me khulne wala button hai upar*/
+
+/* Dropdown Button */
+.dropbtn {
+    color: black;
+    padding: 6px 25px 6px 35px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0px 0px -35px;
+    border-radius: 5px;
+}
+.dropbtncopy {
+    color: black;
+    padding: 6px 2px 6px 3px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin: 6px 0px 6px 25px;
+    border-radius: 5px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: lightgrey;
+}
+.dropbtncopy:hover, .dropbtncopy:focus {
+    background-color: lightgrey;
+}
+/* The search field */
+#myInputs {
+  border-box: box-sizing;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  max-width: 145px;
+  padding:14px 20px 12px 45px ;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+#myInputscopy {
+  color: black;
+  border-box: box-sizing;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 15px;
+  padding:14px 20px 12px 45px ;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInputs:focus {outline: 3px solid #ddd;}
+#myInputscopy:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdowns {
+    display: inline-block;
+}
+.dropdownscopy {
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-contents {
+  left:0;
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    max-width: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    max-height: 300px;
+    max-width: 145px;
+    overflow-x: hidden;
+}
+.dropdown-contentscopy {
+  left:0;
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    max-width: auto;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+/* Links inside the dropdown */
+.dropdown-contents a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-contentscopy a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-contents a:hover {
+  transform: scale(1.05);
+}
+.dropdown-contentscopy a:hover {
+  transform: scale(1.05);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.showit {display:block;}
+
+
+/***************************External links and images at bottom start.***************************/
+  #external-links-wrapper {
+    width: 100%;
+    text-align: center;
+    background-color: #eceff1;
+  }
+  #external-links-wrapper ul li {
+    margin-left: 2%;
+    margin right: 2%;
+  }
+      /***************************External links and images at bottom end.***************************/
+@media(max-width: 460px){
+
+#myNavbar ul li a span{
+display: none;
+}
+#mynavbar ul li a img{
+padding: 0 0 0 0;
+margin: 0 0 0 0 ;
+}
+#myNavbar ul{
+  border: none;
+}
+.intrinsic-container iframe{
+  width: 100%;
+}
+.intrinsic-container{
+  margin: 0;
+}
+}
+ @media(max-width: 1420px){
+  #myNavbar ul li a{
+    padding-top: 50px;
+}
+   #preadv .row .col-xs-8, .col-xs-4{
+    visibility: visible;
+  }
+ @media(max-width: 1520px){
+   #mySidenav{
+visibility: hidden;
+ }
+}
+
+
+
+}
+    /***************************Footer start..***************************/
+  #footer-top{
+    width: 100vw;
+    background-color: darkgrey; 
+    text-align: center;
+  }
+  #footer-top li a{
+    margin-top: 20%;
+    color: white;
+  }
+  #footer {
+    padding:50px;
+    cursor: pointer;
+    text-align : center;
+    color: #fff;
+    background-color: #b0bec5;
+    font-size: 13px;
+    font-weight: 300px;
+  }
+  #footer a {
+    color: #fff;
+  }
+  #footer{
+    background-color: black; 
+  }
+  #footer ul li a {
+    padding: 0 15px;
+   }
+/***************************Footer ends..***************************/
+ </style>
+ </head>
+ <body>
+     <!-- main navbar starts -->
+<div class="container" id="maincontainer" >  
+<nav class="navbar navbar-inverse navmain" );
+">
+  <div class="container-fluid">
+    <div>
+    <div id="upperNav" class="navbar-header" style="min-height: 200px;">
+     <a class="navbar-brand" href="#" id="mainbrand">
+      <img src="images/ne1.png" style="display: inline-block;background-position: initial; width: 150px;">
+            <span style="display: inline-block;color: #2c53a0;word-wrap: break-word;"><h2>Mininstry of Skill Development </h2><h5>Government Of India</h5></span>
+      </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: #2c53a0;border-radius: 100px;border-color: #fffef9;"">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="border: none;">
+      <ul class="nav navbar-nav" style="float: right;margin:40px 0px 0px 0px; ">
+          <li><a href=""><img src="images/knowIndia.png" style=" width: 120px;"></a>
+          <!--   <a href=""><span style="font-size: 15px;color: #2c53a0;padding: 0px 0px 0px 10px;">Know India</span></a> --></li>
+ <li><a href=""><img src="images/india-gov.png" style="width: 150px;"></a>
+            <!-- <a href=""><span style=" font-size: 15px;color: #2c53a0;padding: 0px 10px 0px 10px;">My Government</span></a> --></li>
+ <li><a href=""><img src="images/skillindia.png" style=" width: 150px;"></a>
+           <!--  <a href=""><span style=" font-size: 15px;color: #2c53a0;padding: 0px 10px 0px 10px;">Skill Councils</span></a> --></li>
+ <li><a href=""><img src="images/knowIndia.png" style="width: 150px;"></a>
+            <!-- <a href=""><span style="font-size: 15px;color: #2c53a0;padding: 0px 10px 0px 10px;">Know India</span></a> --></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+</div>
+
+<!-- main navbar ends -->
+<!-----------------------------------Button bar----------------------------------- -->
+      <div class="container" style="width: 100%; margin-left: 0%;padding: 0% 0% 0% 0%;border: 0;">
+         <nav class="navbar navbar-inverse home-navbar" data-spy="scroll" data-target=".navbar" style="width: 100%; border: 0;border-radius: 0px;">
+           <div class="navbar-header">
+            <button type="button" id="toggle_button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar" style="border-radius: 100px;border-color: #fffef9;">
+             <div id="toggle_front">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             </div>
+            </button>
+          </div>
+     
+         <div class="collapse navbar-collapse" id="mainNavBar">
+               <ul class="nav navbar-nav" style="margin: 0px 0px 0px 100px;">
+           <li><a class="navbar_lead" id="crime" href="#ifr" style="background-color:#2c53a0;color: #fff;">Crime</a></li>
+           <li><a class="navbar_lead" id="empowerment" href="#ifr" style="background-color:#2c53a0; color: #fff;">Empowerment</a></li>
+           <li><a class="navbar_lead" id="agriculture" href="#ifr" style="background-color:#2c53a0; color: #fff;">Agriculture</a></li>
+           <li><a class="navbar_lead" id="smart" href="#ifr" style="background-color:#2c53a0; color: #fff;">Smart</a></li>
+           <li><a class="navbar_lead" id="skill" href="#ifr" style="background-color:#2c53a0; color: #fff;">Skilled</a></li>
+
+    </ul>
+    <script >
+      
+      $(document).ready(function(){
+
+        $('.navbar_lead').click(function(e){
+          var id = $(this).attr('id');
+          if( id == 'crime'){
+            var iframe = document.getElementById('ifr');
+            iframe.src = "temp.php?database=crime_avg";
+          }
+          else if( id == 'agriculture'){
+            var iframe = document.getElementById('ifr');
+            iframe.src = "temp.php?database=farmers_sih";
+          }
+          if( id == 'smart'){
+            var iframe = document.getElementById('ifr');
+            iframe.src = "temp.php?database=sih_o3&table_name=smartcity_analysis";
+          }
+          if( id == 'skill'){
+            var iframe = document.getElementById('ifr');
+            iframe.src = "temp.php?database=sih_o3&table_name=skilldata_analysis";
+          }
+          if( id == 'empowerment'){
+            var iframe = document.getElementById('ifr');
+            iframe.src = "temp.php?database=sih_o2";
+          }
+
+        });
+      });
+
+
+    </script>
+          <ul class="nav navbar-nav navbar-right" style="margin: 0px 100px 0px 100px;">
+           <li><a href="newLogIn.php" style="color: white;">Update</a></li>
+            <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;">Profile
+              <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+               <li><a href="#" style="color: black;">Login Info</a></li>
+               <li><a href="#" style="color: black;">Log Out</a></li>
+               <li><a href="#" style="color: black;">Another Login</a></li>
+              </ul>
+            </li>
+          </ul>
+        <form class="navbar-form navbar-right" action="search.php">
+         <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+           <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+             <i class="glyphicon glyphicon-search"></i>
+            </button>
+           </div>
+          </div> 
+         </form>
+        </div>
+      </nav>
+   </div>
+<!----------------------------------- Button bar endss --------------------------------->
+               
+                 <!----------------------- Carousal essential---------------------------->
+    <div class="row" style="width: 100%;margin-left: 0%;padding: 0%;border: 0%;">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel"  >
+      <!-- Indicators -->
+         <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+         </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner"  >
+       <div class="item active">
+        <img src="images/carousel1.jpeg" width="100%"  alt="#">
+         </div>
+        <div class="item">
+        <img src="images/agrischeme.jpg" width="100%" alt="#">
+        </div>
+        <div class="item">
+        <img src="images/carousel3.jpg" width="100%"   alt="#">
+        </div>
+        <div class="item">
+        <img src="images/carousel4.jpg" width="100%"   alt="#">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+       <span class="glyphicon glyphicon-chevron-left"></span>
+       <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+       <span class="glyphicon glyphicon-chevron-right"></span>
+       <span class="sr-only">Next</span>
+      </a>
+     </div>
+ </div> 
+    <!----------------------------------- Carousal Ends.. -------------------------->
+    <!-- advanced search -->
+  
+ <div id="preadv" class="container" style="width: 100%;padding: 0% 0% 0% 0%; background-color:#2c53a0;">
+  <div class="row" style="visibility: hidden;">
+               <div class="col-xs-8" style=" color: #fffef9;margin: 6px 0px 0px 0px;"> <adrak style="margin-left: 30%;font-size: 3vw;"> Search</adrak>
+                           
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="float: right;">Select Objective
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu" style="background-color: #fffef9;">
+                     <li class="dropdown-submenu">
+                      <a class="test" href="#">Crime</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="crime" value="murder" href="#ifr">Murder</a></li>
+                        <li><a class="crime" value="dacoity" href="#ifr">Dacoity</a></li>
+                        <li><a class="crime" value="arson" href="#ifr">Arson</a></li>
+                        <li><a class="crime" value="rape" href="#ifr">Rape</a></li>
+                        <li><a class="crime" value="dowry" href="#ifr">Dowry</a></li>
+                        <li><a class="crime" value="robbery" href="#ifr">Robbery</a></li>
+                        <li><a class="crime" value="kidnapping" href="#ifr">Kidnapping</a></li>
+                        <li><a class="crime" value="riots" href="#ifr">Riots</a></li>                        
+                      </ul>
+                    </li>
+
+                    <li class="dropdown-submenu">
+                      <a class="test" href="#">Agriculture</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="agri" value="drought" href="#ifr">Drought Analysis</a></li>
+                        <li><a class="agri" value="state" href="#ifr">Suicide</a></li>
+                        <li class="dropdown-submenu">
+                          <a class="test" href="#">Season</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="agri" value="production_kharif" href="#ifr">Kharif</a></li>
+                            <li><a class="agri" value="production_rabi" href="#ifr">Rabi</a></li>
+                            <li><a class="agri" value="production_whole" href="#ifr">Full year</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="test" href="#">Unemployment</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="pmkvy" value="cts" href="#ifr">CTS</a></li>
+                        <li><a class="pmkvy" value="sdi" href="#ifr">SDI</a></li>
+                          <li><a class="pmkvy" value="ddugky" href="#ifr">DDUGKY</a></li>
+                        <li><a class="pmkvy" value="sankalp" href="#ifr">SANKALP</a></li>
+                          <li><a class="pmkvy" value="hsrt" href="#ifr">HSRT</a></li>
+                       </ul>
+                    </li>
+                    <li class="dropdown-submenu"><a class="smart" href="#ifr">Smart</a></li>
+                    <li class="dropdown-submenu"><a class="skill" href="#ifr">Skilled</a></li>
+
+                  </ul>
+               </div>
+               <div class="col-xs-4" style=" color: #fffef9" >
+                               <div class="dropdownscopy">
+                                <button onclick="myFunctionCopy()" class="dropbtncopy button btn-default">Your City <span class="caret"></span></button>
+                                <div id="myDropdownscopy" class="dropdown-contentscopy" >
+                                  <input type="text" placeholder="Search.." id="myInputscopy" onkeyup="filterCopyFunction()"  >
+                                  <a class="city_tab" value="aurangabad" href="#ifr">Aurangabad</a>
+                                  <a class="city_tab" href="#ifr">Chennai</a>
+                                  <a class="city_tab" href="#ifr">Chennai</a>
+                                  <a class="city_tab" href="#ifr">Patna</a>
+                                  <a class="city_tab" href="#ifr">Aligarh</a>
+                                  <a class="city_tab" href="#ifr">Hyderabad</a>
+                                  <a class="city_tab" href="#ifr">Indore</a>
+                                  <a class="city_tab" href="#ifr">Nanded</a>
+                                  <a class="city_tab" href="#ifr">Fatehpur</a>
+
+                                </div>
+                              </div>
+                            </div></div>
+                                    </div>
+                                     <script>
+                                                          function myFunctionCopy() {
+                              document.getElementById("myDropdownscopy").classList.toggle("showit");
+                            }
+
+                            function filterCopyFunction() {
+                              var input, filter, ul, li, a, i;
+                              input = document.getElementById("myInputscopy");
+                              filter = input.value.toUpperCase();
+                              div = document.getElementById("myDropdownscopy");
+                              a = div.getElementsByTagName("a");
+                              for (i = 0; i < a.length; i++) {
+                                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                  a[i].style.display = "";
+                                } else {
+                                  a[i].style.display = "none";
+                                }
+                              }
+                            }
+                            </script>
+                      <script>
+                      $(document).ready(function(){
+                        $('.dropdown-submenu a.test').on("click", function(e){
+                          $(this).next('ul').toggle();
+                          e.stopPropagation();
+                          e.preventDefault();
+                        });
+                      });
+                      </script>
+
+
+          <!-- advanced search -->
+              <!-- vertical navbar -->
+              <div id="mySidenav" class="sidenav">
+          <a href="#" style="margin:0px 0px 50px 15px">
+                <img src="images/ne1.png" style="width: 120px;"><br>
+                <span style=" font-size: 1vw;color: #fff; margin:0px 0px 50px 10px;">Advanced Search</span>
+                </a>
+          <ul>   
+               <div>
+               <div class="dropdown" style="margin-top: 50px;">
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="margin: 0px 0px 0px -35px;">Select Objective
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu" style="top:0;left:100%;">
+                     <li class="dropdown-submenu">
+                      <a class="test" href="#">Crime</span></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="crime" value="murder" href="#ifr">Murder</a></li>
+                        <li><a class="crime" value="dacoity" href="#ifr">Dacoity</a></li>
+                        <li><a class="crime" value="arson" href="#ifr">Arson</a></li>
+                        <li><a class="crime" value="rape" href="#ifr">Rape</a></li>
+                        <li><a class="crime" value="dowry" href="#ifr">Dowry</a></li>
+                        <li><a class="crime" value="robbery" href="#ifr">Robbery</a></li>
+                        <li><a class="crime" value="kidnapping" href="#ifr">Kidnapping</a></li>
+                        <li><a class="crime" value="riots" href="#ifr">Riots</a></li>                        
+                      </ul>
+                    </li>
+
+                    <li class="dropdown-submenu">
+                      <a class="test" href="#">Agriculture</span></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="agri" value="drought" href="#ifr">Drought Analysis</a></li>
+                         <li><a class="agri" value="state" href="#ifr">Suicide</a></li>
+                        <li class="dropdown-submenu">
+                          <a class="test" href="#">Season</span></a>
+                          <ul class="dropdown-menu">
+                            <li><a class="agri" value="production_kharif" href="#ifr">Kharif</a></li>
+                            <li><a class="agri" value="production_rabi" href="#ifr">Rabi</a></li>
+                            <li><a class="agri" value="production_whole" href="#ifr">Full year</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="test" href="#">Unemployment</span></a>
+                      <ul class="dropdown-menu">
+                           <li><a class="pmkvy" value="cts" href="#ifr">CTS</a></li>
+                        <li><a class="pmkvy"  value="sdi" href="#ifr">SDI</a></li>
+                          <li><a class="pmkvy" value="ddugky" href="#ifr">DDUGKY</a></li>
+                        <li><a class="pmkvy" value="sankalp" href="#ifr">SANKALP</a></li>
+                          <li><a class="pmkvy" value="hsrt" href="#ifr">HSRT</a></li>
+                      </ul>
+                    </li>
+                     <li><a class="smart" href="#ifr">Smart</a></li>
+                    <li><a class="skill" href="#ifr">Skilled</a></li>
+
+                  </ul>
+                </div>
+
+               </div>
+                      <div>
+                        <div class="dropdowns">
+                                <button onclick="myFunction()" class="dropbtn button btn-default">Your City <span class="caret"></span></button>
+                                <div id="myDropdowns" class="dropdown-contents">
+                                  <input type="text" placeholder="Search.." id="myInputs" onkeyup="filterFunction()" >
+                                  <a class="city_tab" href="#ifr">Aurangabad</a>
+                                  <a class="city_tab" href="#ifr">Chennai</a>
+                                  <a class="city_tab" href="#ifr">Patna</a>
+                                  <a class="city_tab" href="#ifr">Aligarh</a>
+                                  <a class="city_tab" href="#ifr">Hyderabad</a>
+                                  <a class="city_tab" href="#ifr">Indore</a>
+                                  <a class="city_tab" href="#ifr">Nanded</a>
+                                  <a class="city_tab" href="#ifr">Fatehpur</a>
+
+                                </div>
+                              </div>
+
+                            <script>
+                                                          function myFunction() {
+                              document.getElementById("myDropdowns").classList.toggle("showit");
+                            }
+
+                            function filterFunction() {
+                              var input, filter, ul, li, a, i;
+                              input = document.getElementById("myInputs");
+                              filter = input.value.toUpperCase();
+                              div = document.getElementById("myDropdowns");
+                              a = div.getElementsByTagName("a");
+                              for (i = 0; i < a.length; i++) {
+                                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                  a[i].style.display = "";
+                                } else {
+                                  a[i].style.display = "none";
+                                }
+                              }
+                            }
+                            </script>
+                                                  </div>
+                </ul>
+        </div>
+         <script>
+        $("#but_read_again").on("click", function () {
+    $('#selUser2 option').prop('selected', function() {
+        return this.defaultSelected;
+    });
+});
+      </script>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+
+                      <script>
+                      
+                          $(document).ready(function(){
+
+                            $('.crime').click(function(e){
+
+                              e.preventDefault();
+                              console.log("here");
+                              id = $(this).attr('value');
+                              var iframe = document.getElementById('ifr');
+                               iframe.src = "iframe.php?table=" + id + "&database=crime_avg";
+
+                            });
+
+                            $('.agri').click(function(e){
+                              e.preventDefault();
+
+                              var agri_id = $(this).attr('value');
+
+                              if (agri_id == 'drought'){
+                                var iframe = document.getElementById('ifr');
+                                // console.log("iframe.php?table=drought_analysis&database=farmers_sih&third=damage");
+                                iframe.src =  "iframe.php?table=drought_analysis&database=farmers_sih&third=damage";
+                              }
+                              else if( agri_id.split("_")[0] == 'production' ){
+                                var table_name = "farmers_production_" + agri_id.split("_")[1] ;
+                                var iframe = document.getElementById('ifr');
+                                iframe.src =  "iframe.php?table=" + table_name + "&database=farmers_sih&third=prevprod";  
+                              }else{
+                                var iframe = document.getElementById('ifr');
+                                iframe.src =  "iframe.php?table=farmers_state_analysis&database=farmers_sih";
+                              }
+
+                            });
+                            $('.city_tab').click(function(e){
+                              var city_name = $(this).text().toUpperCase()
+                              //console.log( $(this).attr('value') );
+                              var iframe = document.getElementById('ifr');
+                                iframe.src =  "iframe.php?city=" + city_name;
+                                //console.log("iframe.php?table=farmers_state_analysis&database=farmers_sih");
+
+                            });
+
+
+                            $('.smart').click(function(e){
+
+                              var iframe = document.getElementById('ifr');
+                              iframe.src =  "iframe.php?table=smartcity_analysis&database=sih_o3";
+
+                            });
+
+                            $('.skill').click(function(e){
+
+                              var iframe = document.getElementById('ifr');
+                              iframe.src =  "iframe.php?table=skilldata_analysis&database=sih_o3";
+
+                            });
+
+                            $('.pmkvy').click(function(e){
+                              var tab = $(this).attr('value');
+
+                              var iframe = document.getElementById('ifr');
+                              iframe.src =  "iframe.php?database=sih_o2&scheme=" + tab;                              
+
+
+                            });
+
+
+                          });
+
+                      </script>      
+<!-- vertical navbar ends -->
+
+<br>
+   <!------------------------------------ Iframe starts... ---------------------------------------->
+     <div class="intrinsic-container intrinsic-container-16x9">
+      <iframe id="ifr" src="iframe.php" allowfullscreen style="border:none; "></iframe>
+       </div>
+   <!------------------------------------- End iframe..... ---------------------------------------->
+   
+  <!------------------------------------------ External Links starts....------------------------------------>
+      <div id="external-links-wrapper">
+       <div class="container">
+        <div class="row bottom-images">
+         <ul class="list-inline">
+          <li>
+           <a href="#" target="_blank">
+            <img src="images/nsdc.png" alt="" title="nsdc">
+           </a>
+          </li>
+           <li>
+            <a href="#" target="_blank">
+             <img src="images/ddugky.png" alt="" title="ddugky" style="width: 12em;">
+            </a>
+           </li>
+          <li>
+           <a href="#" target="_blank">
+            <img  src="images/pmkvy.png" alt="" title="pmkvy">
+           </a>
+          </li>
+           <li>
+            <a href="#" target="_blank">
+             <img  src="images/skillindia.png" alt="" title="skill India" style="width: 8em;">
+            </a>
+           </li>
+            <li>
+             <a href="#" target="_blank">
+              <img src="images/msde_logo.png" title="msde">
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+  <!------------------------------------------ External Links ends....------------------------------------>
+
+  <!--------------------------------------------Footer starts-------------------------------------------------->
+        <div class="row" id="footer-top">
+       <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footerbar" style="align-self: center; border-radius: 100px;border-color: #fffef9;background-color: black;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="footerbar">
+       <ul class="list-inline">
+           <li><a href="">Don't know</a></li>
+           <li><a href="">What should</a></li>
+           <li><a href="">be written</a></li>
+           <li><a href="">In this span</a></li>
+           <li><a href="">But it looks cool!</a></li>
+          </ul>
+    </div>
+        </div>
+        <footer id="footer">   
+         <div class="container">
+          <div class="row">
+           <div class="col-md-12">
+            <a href="#maincontainer" title="To Top" style="font-size: 20px;">
+             <span class="glyphicon glyphicon-chevron-up">&nbsp;GoToTop&nbsp;</span><span class="glyphicon glyphicon-chevron-up"></span>
+             
+              </a><br><br>
+            <p><span> Copyright© 2018, Code Black Team, <a target="_blank" href="#" title="Skill Development Ministry ">&nbsp;&nbsp;Skill Development Ministry 
+            </a>
+         
+         </p>
+        </div>
+       </div>
+      </footer>
+      <!-- ---------------------------footer ends-------------------------------------- -->
+      <!-- For smooth scrolling -->
+      <script >$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".sidenav a[href='#ifr'],#myInputs a[href='#ifr'],#myInputscopy a[href='#ifr'],.navbar a[href='#ifr'],footer a[href='#maincontainer']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})</script>
+
+<script >
+myID = document.getElementById("mySidenav");
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  var sidenav = $('.sidenav');
+  if (y <= 650) {
+    $(sidenav).css('transform','translateX(-210px)')
+  } else {
+    $(sidenav).css('transform','translateX(210px)','animation-timing-function','ease')
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+</script>
+
+<script >
+  $(document).ready(function() {
+  $("html,body").animate({scrollTop: 10}, 1000); //100ms for example
+});
+</script>
+     </body>
+    

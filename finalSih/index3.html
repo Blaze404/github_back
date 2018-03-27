@@ -1,0 +1,1040 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" />
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Ministry Of Skill Development and Entrepreneurship</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #fff;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color:  #1b365d;
+      color: #fff;
+      padding: 60px 25px;
+      font-family: Montserrat, sans-serif;
+      margin: 0px;
+  }
+  @media(max-width: 720px){
+    .jumbotron{
+        background-color:  #1b365d;
+      color: #fff;
+      padding: 20px 25px;
+      font-family: Montserrat, sans-serif;
+      margin: 0px;
+    }
+  .jumbotron a{
+        margin: 0px;
+        padding: 0px;
+  position: inline-block;
+  text-decoration: none;
+  color: white;
+  }
+.jumbotron h2{
+    font-size: 3vw;
+    color: white;
+    padding: 1px 0px 0px 0px;
+    margin-top: 2px;
+  }
+  }
+  .jumbotron h2{
+    font-size: 3vw;
+    color: white;
+  }
+  .jumbotron a{
+  position: inline-block;
+  text-decoration: none;
+  color: white;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .main-navbar {
+      margin-bottom: 0;
+      background-color:  #1b365d;
+      z-index: 9999;
+      border: 0;
+      font-size: 16px !important;
+      line-height: 1.9 !important;
+      letter-spacing: 2px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .main-navbar a{
+    color: #fff;
+  }
+    .adv-navbar  {
+      margin-bottom: 0;
+      background-color:  #1b365d;
+      z-index: 9999;
+      border: 0;
+      font-size: 16px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 2px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  }
+  .navbar li a{
+      color: #1b365d !important;
+  }
+  .navbar li select option{
+      color: #1b365d !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color:  #1b365d !important;
+      background-color: #fff !important;
+  }
+  
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color:  #fff;
+  }
+  footer{
+    font-size: 15px;
+    color: #fff;
+    background-color: #1b365d;
+    padding: 0px;
+  }
+  .slideanim {
+    visibility:hidden;
+
+  }
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(10%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+     /***************************iframe start..***************************/
+  .intrinsic-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+  }
+      /* 16x9 Aspect Ratio */
+  .intrinsic-container-16x9 {
+    padding-bottom: 75%;
+  } 
+        /* 4x3 Aspect Ratio */
+  .intrinsic-container-4x3 {
+    padding-bottom: 75%;
+  }
+  .intrinsic-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+     /***************************iframe ends..***************************/
+
+@media(max-width: 720px){
+  .intrinsic-container{
+    min-height: 500px;
+  }
+.intrinsic-container iframe{
+  max-height: 100%;
+}
+}
+
+
+
+#objective{
+background-color: transparent !important;
+color: #fff !important;
+}
+#objective li a{
+ color: #fff !important;
+  background-color: #1b365d !important;
+}
+#objective li a:hover{
+  transform: scale(1.1);
+  border-radius: 30px;
+  border-right: 3px solid #eeeeee;
+  border-left: 3px solid #eeeeee;
+cursor: pointer;
+ color: #fff !important;
+ background-color: #1b365d !important;
+}
+#submitbutton{
+  margin: 0 0 0 30px;
+  border-radius: 30px;  
+  color: #1b365d !important;
+  background-color: #fff;
+  
+}
+#submitbutton a:hover{
+    cursor: pointer;
+   transform: scale(1.1);
+color: #fff !important;
+border-radius: 30px;
+background-color: #1b365d !important;
+border-right: 3px solid #eeeeee;
+border-left: 3px solid #eeeeee;
+}
+@media(max-width: 780px){
+
+}
+#selectcity{
+  margin: 9px 0px 0px 50px;
+}
+#selectobj{
+  margin: 9px 0px 0px 50px;
+}
+
+@media(max-width: 780px){
+  #selectcity{
+  margin-left: 10px;
+}
+#selectobj{
+  margin-left: 10px;
+}
+
+#submitbutton{
+  width: 50%;
+  margin: 10px 0px 0px 30px;
+  border-radius: 30px;  
+  color: #fff !important;
+}
+#submitbutton a:hover{
+
+  transform: none;
+color: #fff !important;
+border-color: #1b365d;
+}
+
+
+}
+/*overlay*/
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #1b365d;
+  opacity: 0.9;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.texthai {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.col-sm-4{
+  position: relative;
+}
+.col-sm-4:hover .overlay {
+   bottom: 0;
+   height: 100%;
+}
+
+/*dropdown*/
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    right: 100%;
+    margin-top: 0px;
+    margin-left: -1px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #1b365d;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+}
+.multi-level{
+background-color: #1b365d;}
+
+.tech-slideshow {
+  height: 405px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 200px;
+  width: 2526px;
+  background: url('images/ddugky.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 12s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+}
+/*.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+}*/
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
+
+
+
+
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- jumbotron header -->
+<div class="jumbotron text-center">
+  <h2>Ministry Of skill development and Entrepreneurship</h2>
+  <span>Government Of India</span></a>
+</div>
+<!-- jumbotron header ends -->
+<!-- main navbar -->
+<nav class="navbar-default main-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a  class="navbar_lead" id="crime" href="#ifr" style="color: #fff;">Crime</a></li>
+        <li><a  class="navbar_lead" id="agriculture" href="#ifr" style="color: #fff;">Agriculture</a></li>
+        <li><a  class="navbar_lead" id="empowerment" href="#ifr" style="color: #fff;">Empowerment</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about" style="color: #fff;">Update</a></li>
+      </ul>
+ <form class="navbar-form navbar-right" action="search.php" method="post">
+         <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="searchstring">
+           <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+             <i class="glyphicon glyphicon-search"></i>
+            </button>
+           </div>
+          </div> 
+         </form>
+    </div>
+  </div>
+</nav>   <script >
+      
+      $(document).ready(function(){
+
+        $('.navbar_lead').click(function(e){
+          var id = $(this).attr('id');
+          if( id == 'crime'){
+            var iframe = document.getElementById('ifr');
+            iframe.src = "../temp.php?database=crime_avg";
+          }
+          else if( id == 'agriculture'){
+            var iframe = document.getElementById('ifr');
+            iframe.src = "../temp.php?database=farmers_sih";
+          }
+          if( id == 'empowerment'){
+            var iframe = document.getElementById('ifr');
+            iframe.src = "../temp.php?database=sih_o2";
+          }
+
+        });
+      });
+    </script>
+
+
+<!-- navbar ends -->
+
+<!-- carousel -->
+
+ <div class="container" style="width: 100%;margin-bottom:2%;margin-top: 2%;" >
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/2.jpg" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/3.jpg" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/4.jpg" style="width:100%;">
+      </div>
+       <div class="item">
+        <img src="images/5.jpg" style="width:100%;">
+      </div>
+       <div class="item">
+        <img src="images/6.jpg" style="width:100%;">
+      </div>
+       
+    </div>
+  <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- carousel ends -->
+
+<!-- advanced search -->
+<nav class="navbar navbar-default adv-navbar" id="nav_bar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#cityobj">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Using this tool one can search for a particular city and a particular objective of which one desires to see the statistics!" href="#myPage" style="color: #fff;">Advanced Search</a>
+    </div>
+    <div class="collapse navbar-collapse" id="cityobj">
+        <ul class="nav navbar-nav navbar-left">
+<li  id="selectcity" data-toggle="tooltip" data-placement="top" title="Select a city from options!">
+   <select class="selectpicker" id="sel1" data-show-subtext="true" data-live-search="true" >
+    <option disabled="disabled" selected="selected">Select city...</option>
+       <option class="advanced_city" value="AURANGABAD">Auragabad</option>
+        <option class="advanced_city" value="JALNA">Jalna</option>
+        <option class="advanced_city" value="PATNA">Patna</option>
+        <option class="advanced_city" value="CHENNAI">Chennai</option>
+        <option class="advanced_city" value="KOLKATA">Kolkata</option>
+        <option class="advanced_city" value="PUNE">Pune</option>
+        <option class="advanced_city" value="VAISHALI">Vaishali</option>
+        <option class="advanced_city" value="solapur">Solapur</option>
+        <option class="advanced_city" value="KOLHAPUR">Kolhapur</option>
+        <option class="advanced_city" value="THANE">Thane</option>
+        <option class="advanced_city" value="RAIGAD">Raigad</option>
+        <option class="advanced_city" value="Ratnagiri">Ratnagiri</option>
+        <option class="advanced_city" value="Nagpur">Nagpur</option>
+        <option class="advanced_city" value="Chandrapur">Chandrapur</option>
+        <option class="advanced_city" value="Akola">Akola</option>
+        <option class="advanced_city" value="">Nanded</option>
+        <option class="advanced_city" value="">Dhule</option>
+        <option class="advanced_city" value="">Jalgaon</option>
+        <option class="advanced_city" value="">Jalna</option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+        <option class="advanced_city" value=""></option>
+ 
+        
+      </select>
+</li>
+<li  id="selectobj" data-toggle="tooltip" data-placement="top" title="Select objective from the options!">
+   <select class="selectpicker" id="sel2" data-show-subtext="true" data-live-search="true" >
+    <option selected="selected" disabled="disabled">Select an objective..</option>
+       <option class="advanced_obj" value="crime_avg">Crime</option>
+        <option  class="advanced_obj" value="farmers_sih">Agriculture</option>
+        <option class="advanced_obj" value="sih_o2">Empowerment</option>
+        <option class="advanced_obj" value="sih_o3" id="advanced_smart">Smart</option>
+        <option class="advanced_obj" value="sih_o3" id="advanced_skill">Skilled</option>
+      </select>
+</li>
+          <li id="submitbutton">
+        <a class="btn btn-default submit advanced_submit" type="submit" id="city_submit" value="Submit" href="#ifr">Submit
+            </a>   
+             </li> 
+         </ul>
+          
+
+            <ul class="nav navbar-nav navbar-right" id="objective">
+                <li>
+                   <a class="dropdown-toggle" data-toggle="dropdown" >Objective <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Smart</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Skilled</a></li>
+                        <li class="divider"></li>
+                         <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Crime <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="crime" value="murder" href="#ifr">Murder</a></li>
+                                <li><a class="crime" value="rape" href="#ifr">Rape</a></li>
+                                <li><a class="crime" value="dowry" href="#ifr">Dowry</a></li>
+                                <li><a class="crime" value="arson" href="#ifr">Arson</a></li>
+                                <li><a class="crime" value="kidnapping" href="#ifr">Kidnapping</a></li>
+                                <li><a class="crime" value="robbery" href="#ifr">Robbery</a></li>
+                                <li><a class="crime" value="riots" href="#ifr">Riots</a></li>
+                              </ul>
+                            </li>
+                            <li class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Agriculture <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="agri" value="drought" href="#ifr">Drought</a></li>
+                                <li><a class="agri" value="state" href="#ifr">Suicide</a></li>
+                                <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Season<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                <li><a class="agri" value="production_kharif" href="#ifr">Kharif</a></li>
+                                <li><a class="agri" value="production_rabi" href="#ifr">Rabi</a></li>
+                                <li><a class="agri" value="production_whole" href="#ifr">Whole Season</a></li>
+                               </ul>
+                              </li>
+                            </ul>
+                        </li>
+                          <li class="divider"></li>
+                          <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empowerment<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                             <li><a class="pmkvy" value="cts" href="#ifr">CTS</a></li>
+                        <li><a class="pmkvy"  value="sdi" href="#ifr">SDI</a></li>
+                          <li><a class="pmkvy" value="ddugky" href="#ifr">DDUGKY</a></li>
+                        <li><a class="pmkvy" value="sankalp" href="#ifr">SANKALP</a></li>
+                          <li><a class="pmkvy" value="hsrt" href="#ifr">HSRT</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                  </li>
+   <li>
+                   <a class="button btn-default" href="forIframe.html">District</a>
+                   </li>
+
+
+            </ul>
+    </div>
+  </div>
+</nav>
+
+
+<script>
+                      
+                      
+
+                          $(document).ready(function(){
+
+                            var advanced_city ='';
+                      var advanced_obj = '';
+                      var chapter = '';
+
+
+                        $('#city_submit').click(function(e){
+
+                              advanced_city = $('#sel1 option:selected').val();
+                              advanced_obj = $('#sel2 option:selected').val();
+
+                              var chapter_temp = $('#sel2 option:selected').text();
+                              if( chapter_temp == 'Smart' ){
+                                chapter = 'smartcity_analysis';
+                              }
+                              else{
+                                chapter = 'skilldata_analysis'; 
+                              }
+
+                        });
+
+//                            
+                            
+
+
+                            $('.advanced_city').click(function(e){
+                              e.preventDefault();
+                              console.log('asdksg');
+                              advanced_city = $(this).attr('value');
+                                console.log(advanced_city);
+
+
+
+                              if( advanced_city == '' || advanced_obj == '' ){
+                                alert("You gotta select both city and objective");
+                              } else{
+                                if( advanced_obj != 'sih_o3' ){
+                                  var iframe = document.getElementById('ifr');
+                                  iframe.src =  "../cityobj.php?city=" + advanced_city + "&database=" + advanced_obj;
+                                  console.log("../cityobj.php?city=" + advanced_city + "&database=" + advanced_obj);
+                                }
+                                else{
+                                  var iframe = document.getElementById('ifr');
+                                  console.log(chapter);
+                                  iframe.src =  "../cityobj.php?city=" + advanced_city + "&database=" + advanced_obj + "&chapter=" + chapter;
+                                  console.log("../cityobj.php?city=" + advanced_city + "&database=" + advanced_obj + "&chapter=" + chapter);
+                                }
+                              }
+
+                            });
+/*
+                            $('.advanced_obj').click(function(e){
+                              e.preventDefault();
+                              advanced_obj = $(this).attr('value');
+                              console.log(advanced_obj);
+
+                            });
+                            $('#advanced_smart').click(function(e){
+                              chapter = "smartcity_analysis";
+                            });
+
+                            $('#advanced_skill').click(function(e){
+                              chapter = "skilldata_analysis";
+                            });
+*/
+                            $('.advanced_submit').click(function(e){
+                              e.preventDefault();  
+                              if( advanced_city == '' || advanced_obj == '' ){
+                                alert("You gotta select both city and objective");
+                              } else{
+                                if( advanced_obj != 'sih_o3' ){
+                                  var iframe = document.getElementById('ifr');
+                                  iframe.src =  "../cityobj.php?city=" + advanced_city + "&database=" + advanced_obj;
+                                  console.log("../cityobj.php?city=" + advanced_city + "&database=" + advanced_obj);
+                                }
+                                else{
+                                  var iframe = document.getElementById('ifr');
+                                  
+                                  iframe.src =  "../cityobj.php?city=" + advanced_city + "&database=" + advanced_obj + "&chapter=" + chapter;
+                                  console.log("../cityobj.php?city=" + advanced_city + "&database=" + advanced_obj + "&chapter=" + chapter);
+                                }
+                              }
+
+                            });
+
+                            $('.crime').click(function(e){
+
+                              e.preventDefault();
+                              console.log("here");
+                              id = $(this).attr('value');
+                              var iframe = document.getElementById('ifr');
+                               iframe.src = "../iframe.php?table=" + id + "&database=crime_avg";
+
+                            });
+
+                            $('.agri').click(function(e){
+                              e.preventDefault();
+
+                              var agri_id = $(this).attr('value');
+
+                              if (agri_id == 'drought'){
+                                var iframe = document.getElementById('ifr');
+                                // console.log("iframe.php?table=drought_analysis&database=farmers_sih&third=damage");
+                                iframe.src =  "../iframe.php?table=drought_analysis&database=farmers_sih&third=damage";
+                              }
+                              else if( agri_id.split("_")[0] == 'production' ){
+                                var table_name = "farmers_production_" + agri_id.split("_")[1] ;
+                                var iframe = document.getElementById('ifr');
+                                iframe.src =  "../iframe.php?table=" + table_name + "&database=farmers_sih&third=prevprod";  
+                              }else{
+                                var iframe = document.getElementById('ifr');
+                                iframe.src =  "../iframe.php?table=farmers_state_analysis&database=farmers_sih";
+                              }
+
+                            });
+                            $('.city_tab').click(function(e){
+                              var city_name = $(this).text().toUpperCase()
+                              //console.log( $(this).attr('value') );
+                              var iframe = document.getElementById('ifr');
+                                iframe.src =  "../iframe.php?city=" + city_name;
+                                //console.log("iframe.php?table=farmers_state_analysis&database=farmers_sih");
+
+                            });
+
+
+                            $('.smart').click(function(e){
+                              e.preventDefault();
+                              var iframe = document.getElementById('ifr');
+                              iframe.src =  "../iframe.php?table=smartcity_analysis&database=sih_o3";
+
+                            });
+
+                            $('.skill').click(function(e){
+                              e.preventDefault();
+                              var iframe = document.getElementById('ifr');
+                              iframe.src =  "../iframe.php?table=skilldata_analysis&database=sih_o3";
+
+                            });
+
+                            $('.pmkvy').click(function(e){
+                              e.preventDefault();
+                              var tab = $(this).attr('value');
+
+                              var iframe = document.getElementById('ifr');
+                              iframe.src =  "../iframe.php?database=sih_o2&scheme=" + tab;                              
+
+
+                            });
+
+
+
+                          });
+
+
+
+                      </script>
+
+
+
+
+
+
+
+
+<!-- advanced saerch ends -->
+
+ <!------------------------------------ Iframe starts... ---------------------------------------->
+     <div class="intrinsic-container intrinsic-container-16x9">
+      <iframe id="ifr" src="../temp.php?database=crime_avg" allowfullscreen></iframe>
+       </div>
+   <!------------------------------------- End iframe..... ---------------------------------------->
+
+<!-- Container (Services Section) -->
+<!-- <div class="container-fluid text-center">
+  <h2>Know Schemes</h2>
+  <br>
+  <div class="container">
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <img src="images/skillcarousel.png" class="image">
+        <div class="overlay">
+         <div class="text">
+          <h4>Scheme</h4>
+      <p>Discription....</p>
+    </div>
+  </div>  
+    </div>
+   <div class="col-sm-4" >
+      <img src="images/skillcarousel.png" class="image">
+        <div class="overlay">
+         <div class="text">
+          <h4>Scheme</h4>
+      <p>Discription...</p>
+    </div>
+  </div>  
+    </div>
+   <div class="col-sm-4">
+      <img src="images/skillcarousel.png" class="image">
+        <div class="overlay">
+         <div class="text">
+          <h4>Scheme</h4>
+      <p>Discription....</p>
+    </div>
+  </div>  
+    </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <img src="images/skillcarousel.png" class="image">
+        <div class="overlay">
+         <div class="text">
+          <h4>Scheme</h4>
+      <p>Description....</p>
+    </div>
+  </div>  
+    </div>
+   <div class="col-sm-4">
+      <img src="images/skillcarousel.png" class="image">
+        <div class="overlay">
+         <div class="text">
+          <h4>Scheme</h4>
+      <p>Discription..</p>
+    </div>
+  </div>  
+    </div>
+   <div class="col-sm-4">
+      <img src="images/skillcarousel.png"  class="image">
+        <div class="overlay">
+         <div class="text">
+          <h4>Scheme</h4>
+      <p>Discription....</p>
+    </div>
+  </div>  
+    </div>
+  </div>
+</div>
+</div>
+</div>
+ -->
+
+
+<div class="tech-slideshow">
+  <div class="mover-1"></div>
+  <div class="mover-2"></div>
+</div>
+
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+ 
+  <div class="row">
+    <div class="col-sm-5 text-center">
+  <h2>FeedBack</h2>
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim text-center">
+      <div class="row">
+         <h2>CONTACT</h2>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Copyright CODEBLACK for Smart India Hackathon,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ministry of Skill and Entrepreneurship India.</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+<script>
+  $(document).ready(function(){
+     // Add scrollspy to <body>
+     $('body').scrollspy({target: ".navbar", offset: 50});   
+
+     // Add smooth scrolling on all links inside the navbar
+     $(".main-navbar a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+       if (this.hash !== "") {
+        // Prevent default anchor click behavior
+       event.preventDefault();
+
+       // Store hash
+        var hash = this.hash;
+
+       // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+        scrollTop: $(hash).offset().top
+        }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+        });
+      }  // End if
+    });
+    });
+</script>
+<script>
+  $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+   var distance = 700; 
+   if ($(window).width() < 780) {
+    var distance = 150;
+   }
+         // console.log($(window).scrollTop())
+    if ($(window).scrollTop() > distance) {
+      $('#nav_bar').addClass('navbar-fixed-top');
+    }
+    if ($(window).scrollTop() < distance) {
+      $('#nav_bar').removeClass('navbar-fixed-top');
+    }
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+
+  
+
+
+</body>
+</html>

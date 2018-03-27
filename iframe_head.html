@@ -1,0 +1,165 @@
+<div class="dropdown" style="margin: 0 40%; align-self: center;">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Crime
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+
+  	<script type="text/javascript">
+
+  	</script>
+
+  	<!-- class should always be crime and id should be the table in which its data is stored -->
+
+    <li><a class="crime" id="murder" href="#">Murder</a></li>
+    <li><a class="crime" id="rape" href="#">Rape</a></li>
+    <li><a class="crime" id="dowry" href="#">Dowry</a></li>
+    <li><a class="crime" id="arson" href="#">Arson</a></li>
+    <li><a class="crime" id="kidnapping" href="#">Kidnapping</a></li>	
+    <li><a class="crime" id="robbery" href="#">Robbery</a></li>	
+    <li><a class="crime" id="riots" href="#">Riots</a></li>	
+
+  </ul>
+</div> 
+
+<div class="dropdown" style="margin: 0 40%; align-self: center;">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Agriculture
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+
+  	<!-- class should always be crime and id should be the table in which its data is stored -->
+
+    <li><a class="agri" id="drought" href="#">Drought Analysis</a></li>
+    <li><a class="agri" id="production_kharif" href="#">Kharif Production</a></li>
+    <li><a class="agri" id="production_rabi" href="#">Rabi Production</a></li>
+    <li><a class="agri" id="production_whole" href="#">Whole Production</a></li>
+    <li><a class="agri" id="state" href="#">Farmer State Analysis</a></li>
+
+  </ul>
+</div> 
+
+<div>
+
+		<select id='selUser' style='width: 200px;'>
+			  <option value='AURANGABAD'>City</option> 
+			  <option value='AUTRANGABAD'>Aurangabad</option> 
+			  <option value='CHENNAI'>Chennai</option> 
+			  <option value='PATNA'>Patna</option> 
+			  <option value='ALIGARH'>Aligarh</option> 
+			  <option value='HYDERABAD'>Hyderabad</option> 
+			  <option value='INDORE'>Indore</option> 
+			  <option value='NANDED'>Nanded</option>
+			  <option value='FATEHPUR'>Fatehpur</option> 
+			  <option value='JALNA'>Jalna</option> 
+			</select>
+
+			<input type='button' value='Seleted option' id='but_read'>
+
+			<br/>
+			<div id='result'></div>
+</div>
+
+<div>
+	<button class="smart" id="smart"> Smart Cities </button>
+</div>
+<div>
+	<button class="skill" id="skill"> Skill Cities </button>
+</div>
+			<script>
+
+
+				$(document).ready(function(){
+
+					$('.smart').click(function(e){
+
+						var iframe = document.getElementById('ifr');
+						iframe.src =  "iframe.php?table=smartcity_analysis&database=sih_o3";
+
+					});
+
+					$('.skill').click(function(e){
+
+						var iframe = document.getElementById('ifr');
+						iframe.src =  "iframe.php?table=skilldata_analysis&database=sih_o3";
+
+					});
+
+					$('.agri').click(function(e){
+						e.preventDefault();
+						var agri_id = $(this).attr('id');
+
+						if (agri_id == 'drought'){
+							var iframe = document.getElementById('ifr');
+							// console.log("iframe.php?table=drought_analysis&database=farmers_sih&third=damage");
+							iframe.src =  "iframe.php?table=drought_analysis&database=farmers_sih&third=damage";
+						}
+						else if( agri_id.split("_")[0] == 'production' ){
+							var table_name = "farmers_production_" + agri_id.split("_")[1] ;
+							var iframe = document.getElementById('ifr');
+							iframe.src =  "iframe.php?table=" + table_name + "&database=farmers_sih&third=prevprod";	
+						}else{
+							var iframe = document.getElementById('ifr');
+							iframe.src =  "iframe.php?table=farmers_state_analysis&database=farmers_sih";
+						}
+
+					});
+
+						 // Initialize select2
+					  $("#selUser").select2();
+					 
+					  var city = '';
+
+					  var id = "murder";
+
+						$('.crime').click(function(e){
+							e.preventDefault();
+							city = $('#selUser option:selected').text().toUpperCase();
+							
+							id = $(this).attr('id');
+						
+							var iframe = document.getElementById('ifr');
+							iframe.src =  "iframe.php?table=" + id + "&database=crime_avg";
+					        
+						});
+
+					  // Read selected option
+					  $('#but_read').click(function(){	
+						  	city = $('#selUser option:selected').text().toUpperCase();
+				    
+					    	var iframe = document.getElementById('ifr');
+							iframe.src =  "iframe.php?&city=" + city ;
+
+					  });
+					    				var iframe = document.getElementById('ifr');
+										iframe.src =  "temp.php";
+
+					});
+
+</script>
+
+
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input id="city_city" type="text" class="form-control" name="city">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="text" id="city_objective" class="form-control" name="objective">
+  </div>
+  <button id="city_submit" class="btn btn-default">Submit</button>
+<script>
+	
+	$(document).ready(function(){
+		$('#city_submit').click(function(e){
+			
+			var city = $('#city_city').val();
+			var obj =  $('#city_objective').val();
+			console.log("here");
+
+			var iframe = document.getElementById('ifr');
+			iframe.src =  "cityobj.php?&city=" + city  + "&objective=" + obj;
+			//iframe.src = "www.google.com";
+			console.log("cityobj.php?&city=" + city  + "&objective=" + obj);
+
+		});
+	});
+
+</script>

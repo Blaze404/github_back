@@ -1,0 +1,288 @@
+              <!-- personal styling css -->
+
+  body{
+    width: 100%;
+    margin: 0%;
+    padding: 0%; 
+    border: 0%;
+  }
+  #maincontainer{
+    width: 100%; 
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+  }
+/***************************iframe start..***************************/
+  .intrinsic-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+  }
+      /* 16x9 Aspect Ratio */
+  .intrinsic-container-16x9 {
+    padding-bottom: 75%;
+  } 
+        /* 4x3 Aspect Ratio */
+  .intrinsic-container-4x3 {
+    padding-bottom: 75%;
+  }
+  .intrinsic-container iframe {
+    position: absolute;
+    top:0%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #ifr{
+    border: 1px solid black;
+  }
+     /***************************iframe ends..***************************/      
+
+     /***************************navbar start..***************************/    
+  .search{
+    width: 40%;
+  }
+  .button-group-super{
+    float:right;
+    align-items: block;
+    margin-right: 2%;
+    padding-right: 0px;                              
+  }
+  #mainNavBar ul li a{
+    background-color: #488cf6;
+    background-color:#057d4a;
+    background-color: #264796; 
+    padding-right: 50px;
+  }
+  .home-navbar{
+    background-color: #488cf6;
+    background-color:#057d4a;
+    background-color: #264796;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 100vw;
+    margin-right: 8%; 
+  }
+ .dropdown{
+    color: white;
+  }
+    /************************************ navbar ends..***************************************/
+
+/***************************External links and images at bottom start.***************************/
+  #external-links-wrapper {
+    width: 100%;
+    text-align: center;
+    background-color: #eceff1;
+  }
+  #external-links-wrapper ul li {
+    margin-left: 2%;
+    margin right: 2%;
+  }
+      /***************************External links and images at bottom end.***************************/
+
+      /***************************header start...***************************/
+  #ne-logo{   
+    width: 10vw;
+    float: left;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+  }
+  #logo-text{
+    margin-top: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #488cf6;
+    color:#057d4a;
+    color: #264796;
+    font-size: 3.5vw;
+    font-weight: 700;
+  }
+  #Digi_Logo{
+    margin-top: 1vw;
+    width: 14vw;
+    float: right;
+    margin-right: 0%;
+  }
+  #msde_logo{
+    margin-top: 1vw;
+    width: 14vw;
+    float: right;
+    margin-right: 0%;
+  }
+    /***************************Header ends....***************************/
+
+     /***************************feedback row ends....***************************/
+  #feedback-row{
+    background-color: #488cf6;
+    background-color:#057d4a;
+    background-color: #264796;
+    margin-top: 2%;
+   font-family: 'Open Sans', sans-serif;
+    width: 101%;
+  }
+  #share-us,#contact-us{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  #contact-us i{
+      padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+  }
+  #share-us i{
+      padding-left: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+  }
+  .fa-lg a i{
+    color: white;
+    padding: 5px;
+    font-weight: -100;
+  }
+  #External-container{
+    margin-bottom:2%;
+    margin-top: 1vw;
+  }
+   #External-container a{
+    text-decoration: none;
+  }
+  .fa-lg{
+    margin-left: 6vw;
+  }
+  #External-container a p{
+    font-size: 1em;
+    color: white;
+  }
+  #spotlight h3{
+    margin-left: 6vw;
+    color: #fff;
+    font-weight: 600;
+  }
+  #spotlight ul li{
+    margin-left: 7.5vw;
+    color: #fff;
+  }
+  #spotlight a{
+    padding: 10px;
+    margin-left: 7vw;
+    color: #fff;
+    background-color:#4caaff;
+    border-radius: 40px;
+    text-decoration: none;
+  }
+  #spotlight a:hover{
+   background-color:  #1888c9;
+  }
+  #spotlight h1{
+    margin-left:8vw;
+    color:#fff;
+    font-weight: 700;
+    margin-bottom: 0%;
+  }
+  #transparency h1{
+    margin-left: 8vw;
+    color:#fff;
+    font-weight: 700;
+    margin-bottom: 2%;
+  }
+  #transparency span {
+    color: #fff;
+    margin-left: 7.9vw;
+  }
+  #transparency span a{
+    color: #fff;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+  }
+  #brdr1{
+    border-right: 0.001em solid #4caaff;
+  }
+   #brdr2{
+    border-right: 0.001em solid #4caaff;
+  }
+  #involve{
+    color: #fff;
+    text-align: center;
+  }#involve h1{
+    margin-left: 2vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+  }
+  #involvebot a{
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    background-color: #4caaff;
+    border-radius: 40px;
+    margin-bottom: 7vw;
+    color: #fff;
+    text-decoration: none;
+  }
+  #involvebot1 a{
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    background-color: #4caaff;
+    border-radius: 40px;
+    margin-bottom: 7vw;
+    color: #fff;
+    text-decoration: none;
+  }
+  #involvebot a:hover{
+    background-color:#1888c9; 
+  }
+  #involvebot1 a:hover{
+     background-color:#1888c9; 
+  }
+  #involve h4{
+  font-family: 'Open Sans', sans-serif;
+    margin-bottom: 3vw;
+    font-style: italic;
+  }
+    /***************************feedback ends....***************************/
+
+    /***************************Footer start..***************************/
+  #footer-top{
+    width: 100vw;
+    background-color: darkgrey; 
+    text-align: center;
+  }
+  #footer-top li a{
+    margin-top: 20%;
+    color: white;
+  }
+  #footer {
+    padding:50px;
+    cursor: pointer;
+    text-align : center;
+    color: #fff;
+    background-color: #b0bec5;
+    font-size: 13px;
+    font-weight: 300px;
+  }
+  #footer a {
+    color: #fff;
+  }
+  #footer{
+    background-color: black; 
+  }
+  #footer ul li a {
+    padding: 0 15px;
+   }
+/***************************Footer ends..***************************/
+ 
+/*MEdia queries*/
+@media( max-width: 468px ){
+  #myCarousel{
+    display: none;
+  }
+}

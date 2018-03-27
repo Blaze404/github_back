@@ -1,0 +1,128 @@
+<!--
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Highcharts Example</title>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.js"></script>
+        <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+
+        <script>
+
+            var chart; // global
+            
+            function requestData() {
+                $.ajax({
+                    url: './crimedata_live.php', 
+                    success: function(point) {
+                        var series = chart.series[0],
+                            shift = series.data.length > 20; // shift if the series is longer than 20
+            
+                        chart.series[0].addPoint(eval(point), true, shift);
+                        
+                        // call it again after one second
+                        setTimeout(requestData, 1000);  
+                    },
+                    cache: false
+                });
+            }
+                
+            $(document).ready(function() {
+                chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'container',
+                        defaultSeriesType: 'spline',
+                        events: {
+                            load: requestData
+                        }
+                    },
+                    title: {
+                        text: 'Live random data'
+                    },
+                    xAxis: {
+                        type: 'datetime',
+                        tickPixelInterval: 150,
+                        maxZoom: 20 * 1000
+                    },
+                    yAxis: {
+                        minPadding: 0.2,
+                        maxPadding: 0.2,
+                        title: {
+                            text: 'Value',
+                            margin: 80
+                        }
+                    },
+                    series: [{
+                        
+
+                name: 'Random data',
+                        data: []
+                        }]
+                    });     
+                    });
+
+
+
+        </script>
+
+    </head>
+    <body>
+        <div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
+    </body>
+</html>
+
+
+
+-->
+
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+ 
+<script>
+var district = <?php echo json_encode(district) ?>;
+var vals = {};
+vals["name"] = "murder";
+vals["data"] = <?php echo json_encode(values) ?>;
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Monthly Average Rainfall'
+    },
+    xAxis: {
+        categories: district,
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Rainfall (mm)'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.1,
+            borderWidth: 1
+        }
+    },
+    series: vals/*[{
+        name: 'Tokyo',
+        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+
+    }]*/
+});
+</script> -->
